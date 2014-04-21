@@ -78,7 +78,7 @@ _.isString('strawberry');
 _.escape('strawberry, pineapple, raspberry and lemon')
 // returns "strawberry, pineapple, raspberry and lemon"
 
-// example 10
+// example 11
 _.groupBy(['strawberry', 'pineapple', 'raspberry', 'lemon'], 'length');
 // returns Object {5: Array[1], 9: Array[2], 10: Array[1]}
 // 		5: Array[1]
@@ -97,15 +97,15 @@ var toddy = [
 {playsFetch: true}
 ];
 
-// example 11
+// example 12
 _.extend({name: 'toddy'},{species: 'dog'});
 // returns Object {name: "toddy", species: "dog"}
 
-// example 12
+// example 13
 toddy === _.identity(toddy);
 // returns true
 
-// example 13
+// example 14
 _.pairs({name: 'toddy', age: 7, species: 'dog', color: 'black', playsfetch: true});
 [
 Array[2]
@@ -140,7 +140,7 @@ __proto__: Array[0]
 ]
 // Convert an object into a list of [key, value] pairs.
 
-// example 14
+// example 15
 _.omit({name: 'toddy', age: 7, species: 'dog', color: 'black', playsfetch: true}, 'playsfetch')
 // returns Object {name: "toddy", age: 7, species: "dog", color: "black"}
 
@@ -151,37 +151,35 @@ var threes = [3, 6, 9, 12, 15, 18, 21, 24, 27, 30];
 var fives = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50];
 
 
-// example 15
+// example 16
 _.difference(threes, fives);
 // returns [3, 6, 9, 12, 18, 21, 24, 27]
 
-// example 16
+// example 17
 _.min(threes);
 // returns 3
 _.min(fives):
 // returns 5
 
-// example 17
+// example 18
 _.contains(threes, 62);
 // returns false
 _.contains(threes, 3);
 //  returns true
 
-// example 18 
+// example 19 
 _.find([3, 6, 9, 12, 15, 18, 21, 24, 27, 30], function(numb){return numb % 5 == 0});
 // returns 15
 _.find([3, 6, 9, 12, 15, 18, 21, 24, 27, 30], function(numb){return numb % 2 == 0});
 // returns 6
 
-// example 19
+// example 20
 _.reject([3, 6, 9, 12, 15, 18, 21, 24, 27, 30], function(numb){return numb % 5 == 0});
 // returns [3, 6, 9, 12, 18, 21, 24, 27]
 
-// example 20
+// example 21
 _.filter([3, 6, 9, 12, 15, 18, 21, 24, 27, 30], function(numb){return numb % 5 == 0});
 //  returns [15, 30]
-
-// example 21
 
 
 
